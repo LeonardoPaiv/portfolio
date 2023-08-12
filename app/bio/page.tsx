@@ -13,8 +13,8 @@ const Bio = () => {
         width={426}
         height={240}
       />
-      <div className="flex flex-col md:w-1/3 md:h-2/4 h-1/3 justify-around ">
-        <h1 className="mb-4 text-3xl">
+      <div className="md:w-1/3 md:h-2/4 h-1/3 justify-around ">
+        <h1 className="mb-4 text-3xl text-justify">
           I am a Developer passionated to bring{" "}
           <span className="text-violet-500">solutions</span>
         </h1>

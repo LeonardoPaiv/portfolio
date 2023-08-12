@@ -12,16 +12,15 @@ const Projects = () => {
     if (count > 0) {
       setCount(count - 1);
     } else {
-      setCount(images.length -1)
+      setCount(images.length - 1);
     }
-
   };
 
   const handleNext = () => {
     if (images.length - 1 > count) {
-      setCount(count + 1)
+      setCount(count + 1);
     } else {
-      setCount(0)
+      setCount(0);
     }
   };
 
@@ -30,17 +29,23 @@ const Projects = () => {
       <div className="flex w-full justify-start">
         <Header1>Projects</Header1>
       </div>
-      <div className="relative mt-3 h-96 w-full">
-        <button className="absolute top-44" onClick={handleVoltar}>
+      <div className="relative mt-3 md:h-96 w-full">
+        <button
+          className="absolute top-28 md:top-44 bg-black"
+          onClick={handleVoltar}
+        >
           <Image
             className="rotate-180 invert"
             src={arrow}
-            width={40}
+            width={20}
             alt="Back"
           />
         </button>
-        <button className="absolute invert top-44 right-0" onClick={handleNext}>
-          <Image src={arrow} width={40} alt="Back" />
+        <button
+          className="absolute bg-black top-28 right-0 md:top-44"
+          onClick={handleNext}
+        >
+          <Image src={arrow} width={20} alt="Back" className="invert" />
         </button>
         {images[count]}
       </div>

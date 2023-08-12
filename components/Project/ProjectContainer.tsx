@@ -15,7 +15,7 @@ const ProjectContainer = ({
 }: IProkectContainerProp) => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="h-96 overflow-hidden flex items-center">
+      <div className="h-60 md:h-96 overflow-hidden flex items-center">
         <Image src={image} alt="s" width={500} height={444}/>
       </div>
       <div className="flex w-full justify-start my-4">

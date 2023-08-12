@@ -5,7 +5,7 @@ import Header1 from "@/components/titulos/Header1";
 const Education = () => {
   return (
     <Main>
-      <div className="w-2/3 md:w-1/4 md:h-2/4">
+      <div className="mt-24 md:mt-0 w-full md:w-1/4 md:h-2/4">
         <Header1>Education</Header1>
         <h2 className="font-bold my-2 text-xl">Bachelor of Computer Science</h2>
         <p className="text-justify">
@@ -14,7 +14,7 @@ const Education = () => {
           my class, maintaining consistently superior grades.
         </p>
       </div>
-      <div className="w-2/3 md:w-1/4 md:h-2/4">
+      <div className="w-full md:w-1/4 md:h-2/4">
         <Header1>Certificates</Header1>
         <Certificate institution="XPE" name="Bootcamp desenvolvedor React - 148h"/>
         <Certificate institution="XPE" name="Bootcamp Desenvolvedor NodeJs - 148h"/>

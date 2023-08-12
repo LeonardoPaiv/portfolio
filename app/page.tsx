@@ -6,8 +6,8 @@ import Header1 from "@/components/titulos/Header1";
 
 const page = () => {
   return (
-    <div className="h-full flex md:flex-row flex-col justify-around items-center ">
-      <div className="flex flex-col md:h-2/4 h-1/3 md:justify-between justify-around">
+    <div className="h-full flex md:flex-row flex-col justify-between md:justify-around items-center ">
+      <div className="flex flex-col mt-10 md:mt-0 md:h-2/4 h-1/3 md:justify-between justify-around">
         <Header1>Leonardo Paiva</Header1>
         <MainMenu />
       </div>
