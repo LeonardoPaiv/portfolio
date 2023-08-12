@@ -1,11 +1,19 @@
 import React from "react";
 import img from "../../public/1685913423614.jpg";
 import Image from "next/image";
+import Main from "@/components/containers/Main";
 
 const Bio = () => {
   return (
-    <div className="h-full flex md:flex-row flex-col justify-around items-center ">
-      <div className="md:w-2/4">
+    <Main>
+      <Image
+        className="rounded-xl"
+        src={img}
+        alt="Leonardo de Paiva Rêgo"
+        width={426}
+        height={240}
+      />
+      <div className="flex flex-col md:w-1/3 md:h-2/4 h-1/3 justify-around ">
         <h1 className="mb-4 text-3xl">
           I am a Developer passionated to bring{" "}
           <span className="text-violet-500">solutions</span>
@@ -22,14 +30,7 @@ const Bio = () => {
           robust and scalable systems
         </p>
       </div>
-      <Image
-        className="rounded-xl"
-        src={img}
-        alt="Leonardo de Paiva Rêgo"
-        width={426}
-        height={240}
-      />
-    </div>
+    </Main>
   );
 };
 

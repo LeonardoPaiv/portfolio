@@ -1,3 +1,4 @@
+import BackMain from "@/components/Buttons/BackMain";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -19,9 +20,10 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " bg-slate-900 text-white md:container md:mx-auto p-4"
+          " bg-slate-900 text-white md:container md:mx-auto p-4 relative"
         }
       >
+        <BackMain/>
         {children}
       </body>
     </html>
