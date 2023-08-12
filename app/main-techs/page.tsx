@@ -1,9 +1,22 @@
 import Image from "next/image";
-import img from "../../public/typescript-def.png";
+import typescript from "../../public/techs/typescript-def.png";
+import react from "../../public/techs/1611079.png";
+import express from "../../public/techs/Expressjs.png";
+import nest from "../../public/techs/nestjs-logo-09342F76C0-seeklogo.com.png";
+import next from "../../public/techs/nextjs.png";
+import nodejs from "../../public/techs/nodejs-logo-FBE122E377-seeklogo.com.png";
 import Main from "../../components/containers/Main";
 import Header2 from "../../components/titulos/Header2";
+import TechImages from "@/components/images/TechImages";
 
-const images = [img, img, img, img, img, img];
+const images = [
+  { image: nodejs, alt: "NodeJs" },
+  { image: react, alt: "React" },
+  { image: express, alt: "ExpressJs" },
+  { image: next, alt: "NextJs" },
+  { image: nest, alt: "NestJs" },
+  { image: typescript, alt: "Typescript" },
+];
 
 const MainTechs = () => {
   return (
@@ -23,14 +36,7 @@ const MainTechs = () => {
       </div>
       <div className="md:columns-2 columns-3">
         {images.map((item, i) => (
-          <Image
-          className="bg-gray-200 p-1 mb-3"
-            key={i}
-            src={item}
-            alt="Leonardo de Paiva Rêgo"
-            width={144}
-            height={144}
-          />
+          <TechImages image={item.image} alt={item.alt} key={i} />
         ))}
       </div>
     </Main>

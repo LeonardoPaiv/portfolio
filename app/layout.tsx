@@ -1,4 +1,4 @@
-import BackMain from "@/components/Buttons/BackMain";
+import LayoutButtons from "@/components/Buttons/LayoutButtons";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,7 +23,7 @@ export default function RootLayout({
           " bg-slate-900 text-white md:container md:mx-auto p-4 relative"
         }
       >
-        <BackMain/>
+        <LayoutButtons/>
         {children}
       </body>
     </html>
