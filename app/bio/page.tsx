@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../public/1685913423614.jpg";
+import img from "../../public/work.jpg";
 import Image from "next/image";
 import Main from "@/components/containers/Main";
 
@@ -7,7 +7,7 @@ const Bio = () => {
   return (
     <Main>
       <Image
-        className="rounded-xl"
+        className="rounded-xl w-auto h-auto"
         src={img}
         alt="Leonardo de Paiva Rêgo"
         width={426}
