@@ -25,14 +25,14 @@ const LayoutButtons = () => {
         </span>
         </Link>
     </button>
-    <button className="bg-slate-800 md:p-1 rounded-md">
+    {/* <button className="bg-slate-800 md:p-1 rounded-md">
       <Link href="/contact">
         <span className='flex items-center'>
         <Image alt='Mail' src={mail} width={16} height={16} className='mr-2'/>
         Mail-me
         </span>
         </Link>
-    </button>
+    </button> */}
     </nav>
   );
 };
